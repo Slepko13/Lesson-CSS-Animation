@@ -1,0 +1,35 @@
+.deck {
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .deck .card {
+    width: 73px;
+    height: 98px;
+    margin-bottom: 15px;
+    position: relative;
+    border: none;
+    margin-right: 50px;
+    border: 1px solid red; }
+    .deck .card:hover .verso {
+      transform: rotate3d(0, 1, 0, 90deg);
+      transition: 0.2s;
+      transition-delay: 0.3s; }
+    .deck .card:hover .face {
+      transform: rotate3d(0, 1, 0, 0);
+      transition: 0.2s;
+      transition-delay: 0.5s; }
+    .deck .card .face {
+      width: 73px;
+      height: 98px;
+      position: absolute;
+      transform: rotate3d(0, 1, 0, 90deg);
+      transition: 0.2s; }
+    .deck .card .verso {
+      background-image: linear-gradient(45deg, #3c7fd4 0%, #24ccfa 100%);
+      width: 73px;
+      height: 98px;
+      position: absolute;
+      transform: rotate3d(0, 1, 0, 180deg);
+      transition: 0.2s;
+      transition-delay: 0.2s; }
